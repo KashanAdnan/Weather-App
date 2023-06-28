@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="continaner">
+        <div class="search-box">
+            <div class="location">
+                <i class="fa-solid fa-location-dot"></i>
+                <input type="text" id="location" placeholder="Enter Location">
+            </div>
+            <button onclick="search()" class="fa-solid fa-magnifying-glass"></button>
+        </div>
+        <div class="weather-box none">
+            <img id="icon" src="./images/rain.png" alt="">
+            <div class="main">
+                <div class="main_temp">
+                    <h1 id="temp">33°C</h1>
+                    <h1 id="main">Rainy</h1>
+                </div>
+                <div class="smae">
+                    <div class="humidity">
+                        <img class="humi" src="./images/mist.png" alt="">
+                        <h1>Humidity</h1>
+                        <p id="humidity">52</p>
+                    </div>
+                    <div class="humidity">
+                        <img class="humi" src="./images/rain.png" alt="">
+                        <h1>Feels Like</h1>
+                        <p id="feels">52</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="error none">
+            <img src="./images/404.png" alt="">
+            <h1>OOPS! the Keyword is wrong</h1>
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>

@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #06283D;
+}
+
+.container {
+    position: relative;
+    width: 400px;
+    height: 105px;
+    background: #fff;
+    padding: 28px 32px;
+    overflow: hidden;
+    border-radius: 18px;
+    font-family: 'Roboto', sans-serif;
+    transition: 0.6s ease-out;
+}
+
+
+.search-box {
+    width: 450px;
+    height: 70px;
+    background-color: #fff;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+.search-box input {
+    font-size: 17px;
+    margin-left: 30px;
+}
+
+.search-box i {
+    font-size: 20px;
+}
+
+.search-box button {
+    padding: 10px 30px;
+    border-radius: 50%;
+    color: #06283D;
+    height: 40px;
+    width: 5px;
+    display: flex;
+    font-size: 19px;
+    cursor: pointer;
+    background: none;
+    align-items: center;
+    text-transform: uppercase;
+    justify-content: center;
+}
+
+.none {
+    display: none !important;
+}
+
+
+.weather-box {
+    width: 450px;
+    height: 500px;
+    margin: 10px 0 0 0;
+    background-color: #fff;
+    border-radius: 18px;
+    display: flex;
+    font-family: "Poppins";
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+#icon {
+    width: 200px;
+}
+
+.humi {
+    width: 50px;
+    filter: grayscale(1);
+}
+
+.smae {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 30px;
+}
+
+.humidity {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.humidity h1{
+    font-size: 16px;
+}
+
+#temp{
+    font-size: 40px;
+    margin: 10px 0 0 0 ;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.error{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 450px;
+    height: 400px;
+    padding: 10px;
+    font-family: "Poppins";
+    background-color: #fff;
+    margin: 10px 0;
+    border-radius: 18px;
+}
+
+.error h1{
+    font-size: 24px;
+    text-align: center;
+}
