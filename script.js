@@ -8,7 +8,11 @@ function search() {
     .then((json) => {
       if (json.cod === "404") {
         document.querySelector(".error").classList.remove("none");
+        document
+          .querySelector(".weather-box")
+          .classList.add("none");
       } else {
+        document.querySelector(".error").classList.add("none");
         const weather_box = document
           .querySelector(".weather-box")
           .classList.remove("none");
